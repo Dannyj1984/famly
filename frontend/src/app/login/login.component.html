@@ -1,0 +1,23 @@
+<div class="container" style="max-width: 400px;">
+  <div class="d-flex justify-content-center">
+    <img src="../../assets/images/logo.png" style="height:200px;"/>
+  </div>
+  <div class="form-group d-flex flex-column justify-content-center mt-4">
+    <div>
+      <label for="username">Username </label>
+      <input class="form-control" id="username" type="text" [formControl]="username">
+    </div>
+    <div>
+      <label for="password">Password </label>
+      <input class="form-control" id="password" type="password" [formControl]="password">
+      <small class="text-center" id="emailHelp" class="form-text text-muted"> <a href="/login" (click)="forgotPassword()">Forgotten password?</a></small>
+    </div>
+
+    <div class="form-group form-check mt-3">
+      <input type="checkbox" class="form-check-input" id="rememberMeCheck">
+      <label class="form-check-label" for="rememberMeCheck">Remember me?</label>
+    </div>
+    <button type="submit" class="btn mt-5" style="background-color:#ADFF99;">Login</button>
+  </div>
+</div>
+
